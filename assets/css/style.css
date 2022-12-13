@@ -7,15 +7,20 @@
     --yellow-green: #ECF87F;
     --lime-green: #81B622;
     --olive-green: #3D550C;
+    --mustard: #DBA40E;
+
 }
 
 body {
-    background-color: var(--lime-green);
+    background-color: var(#107869);
+    background-image: linear-gradient(45deg, #104210 0%,  #81B622 100%);
+    
 }
 
 .header {
     display: inline-flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     background-color:  var(--olive-green);
     padding: 40px;
@@ -26,28 +31,70 @@ body {
 
 .header h1 {
     font-size: 200%;
-    margin-right: 40px;
+    margin-right: 600px;
+    color:#DBA40E;
 }
 
-nav {
+.navflex {
     display: inline-flex;
     height: 20px;
     list-style-type: none;
     background-color: var(--green);
+    border-radius: 15px 15px;
+    padding-left: 80px;
 }
 
-}
-nav a {
+.navflex a {
+    margin-left: 100px;
     text-decoration: none;
     color: var(--yellow-green);
+    font-size: 22px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 main {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 150px;
-
 }
 
+.about-me {
+    display: inline-flex;
+}
+
+.about-me h2 {
+color: var(--mustard);
+background-color: var(--green);
+padding: 50px;
+margin: 50px 50px;
+border-radius: 50%;
+}
+
+.verticleLine {
+    border-left: 15px #ECF87F;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin: 0%;
+    top: 0;
+}
+
+.about-me p {
+    margin-top: 50px;
+}
+
+.Work {
+    display: flex;
+    flex: wrap;
+}
+
+
+.Work h3{
+    color: var(--mustard);
+    background-color: var(--green);
+    padding: 50px;
+    margin: 50px 50px;
+    border-radius: 50%;
+}
