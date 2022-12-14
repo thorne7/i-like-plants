@@ -13,6 +13,7 @@
 }
 
 body {
+    width: 100%;
     background-color: var(--lime-green);
     background-image: linear-gradient(182deg, #131516fa 0%, rgb(49 68 10 / 0%) 100%);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
@@ -61,7 +62,7 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-        .header h1 { 
+        h1 { 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -107,9 +108,10 @@ h2 {
 
 .vertLineAbout{
     display: inline-block;
-    border-left: 1px solid #ECF87F;
+    border-left: 5px solid #ECF87F;
     margin: 0 20px;
-    height: 125px;
+    height: 200px;
+    border-radius: 15px;
 }
 
 .Work {
@@ -119,6 +121,13 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.Work nav {
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
 }
 
 h3 {
@@ -133,7 +142,61 @@ h3 {
 
 .vertLineWork{
     display: inline-block;
-    border-left: 1px solid #ECF87F;
+    border-left: 5px solid #ECF87F;
     margin: 0 20px;
-    height: 125px;
+    height: 200px;
+    border-radius: 15px;
 }
+
+.proj1 {
+    position: relative;
+    text-align: center;
+    margin-top: 200px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.proj1 img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--mustard);
+    font-size: 30px;
+}
+
+@media screen and (max-width: 576px) {
+    .about-me {
+        max-inline-size: ; 
+        justify-content: center; 
+        align-items: center;         
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h2 { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1vw;
+    }
+}
+
+/* @media screen and (max-width: 576px) {
+    .navflex {
+        padding-left: 5px ;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navflex a {
+    }
+} */
