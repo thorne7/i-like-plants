@@ -27,6 +27,7 @@ body {
     padding: 40px;
     position: fixed;
     white-space: nowrap;
+    z-index: 1;
 }
 
 .header h1 {
@@ -125,6 +126,7 @@ h2 {
 
 .Work nav {
     display: grid;
+    grid-template: column, column;
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
@@ -190,6 +192,37 @@ h3 {
     }
 }
 
+.proj2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.proj3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.proj4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.proj5 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
 /* @media screen and (max-width: 576px) {
     .navflex {
         padding-left: 5px ;
