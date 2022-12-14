@@ -12,13 +12,10 @@
 
 }
 
-
-
 body {
     background-color: var(--lime-green);
     background-image: linear-gradient(182deg, #131516fa 0%, rgb(49 68 10 / 0%) 100%);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
 
 .header {
@@ -56,45 +53,75 @@ body {
     font-size: 22px;
 }
 
-    @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
         .header {
             justify-content: center; 
             align-items: center;         
         }
-    }
+}
 
-    @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
         .header h1 { 
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 1vw;
         }
-    }
+}
 
-    @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
         .navflex {
             padding-left: 5px ;
         }
-    }
+}
 
-    @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
         .navflex a {
         }
-    }
+}
 
- main {
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
- }
-
- .about-me {
-    display: inline-flex;
-    margin-top: 200px;
 }
 
-.about-me h2 {
+.about-me {
+    display: inline-flex;
+    margin-top: 200px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    color: var(--mustard);
+    background-color: var(--green);
+    padding: 20px;
+    margin: 0px 50px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.vertLineAbout{
+    display: inline-block;
+    border-left: 1px solid #ECF87F;
+    margin: 0 20px;
+    height: 125px;
+}
+
+.Work {
+    display: inline-flex;
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h3 {
     color: var(--mustard);
     background-color: var(--green);
     padding: 20px;
@@ -104,89 +131,9 @@ body {
     width: 80px;
 }
 
-
-
-
- .verticleLine {
-        border-left: 15px #ECF87F;
-        height: 500px;
-        position: absolute;
-        left: 50%;
-        margin: 0%;
-        top: 0;
-    } 
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-}
-
-
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 150px;
-}
-
-.about-me {
-    display: inline-flex;
-}
-
-.about-me h2 {
-color: var(--mustard);
-background-color: var(--green);
-padding: 50px;
-margin: 50px 50px;
-border-radius: 50%;
-}
-
-.verticleLine {
-    border-left: 15px #ECF87F;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    margin: 0%;
-    top: 0;
-}
-
-.about-me p {
-    margin-top: 50px;
-}
-
-.Work {
-    display: flex;
-    flex: wrap;
-}
-
-
-.Work h3{
-    color: var(--mustard);
-    background-color: var(--green);
-    padding: 50px;
-    margin: 50px 50px;
-    border-radius: 50%;
-}
-
-@media screen and (max-width: 576px) {
-    header {
-        width: 50%;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .navflex {
-        width: 50%;
-        flex-direction: column;
-    }
+.vertLineWork{
+    display: inline-block;
+    border-left: 1px solid #ECF87F;
+    margin: 0 20px;
+    height: 125px;
 }
