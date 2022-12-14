@@ -8,48 +8,126 @@
     --lime-green: #81B622;
     --olive-green: #3D550C;
     --mustard: #DBA40E;
+    --bluegreen: #107869;
 
 }
 
+
+
 body {
-    background-color: var(#107869);
-    background-image: linear-gradient(45deg, #104210 0%,  #81B622 100%);
+    background-color: var(--lime-green);
+    background-image: linear-gradient(182deg, #131516fa 0%, rgb(49 68 10 / 0%) 100%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 
 .header {
     display: inline-flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     background-color:  var(--olive-green);
     padding: 40px;
     position: fixed;
-    top: 0px;
-    align-items: center;
+    white-space: nowrap;
 }
 
 .header h1 {
     font-size: 200%;
-    margin-right: 600px;
+    margin-right: 400px;
     color:#DBA40E;
 }
 
 .navflex {
     display: inline-flex;
-    height: 20px;
+    height: 30px;
+    align-items: center;
     list-style-type: none;
-    background-color: var(--green);
     border-radius: 15px 15px;
     padding-left: 80px;
+    background-color: var(--green);
 }
 
 .navflex a {
     margin-left: 100px;
     text-decoration: none;
     color: var(--yellow-green);
+    background-color: var(--green);
+    margin: 10px 10px;
     font-size: 22px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+    @media screen and (max-width: 576px) {
+        .header {
+            justify-content: center; 
+            align-items: center;         
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .header h1 { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1vw;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .navflex {
+            padding-left: 5px ;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .navflex a {
+        }
+    }
+
+ main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .about-me {
+    display: inline-flex;
+    margin-top: 200px;
+}
+
+.about-me h2 {
+    color: var(--mustard);
+    background-color: var(--green);
+    padding: 20px;
+    margin: 50px 50px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+
+
+
+ .verticleLine {
+        border-left: 15px #ECF87F;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        margin: 0%;
+        top: 0;
+    } 
+
+
+
+
+
+
+
+
+
+
+/*
+
+
 }
 
 
@@ -97,4 +175,18 @@ border-radius: 50%;
     padding: 50px;
     margin: 50px 50px;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        width: 50%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navflex {
+        width: 50%;
+        flex-direction: column;
+    }
 }
