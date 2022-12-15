@@ -79,10 +79,7 @@ body {
         }
 }
 
-@media screen and (max-width: 576px) {
-        .navflex a {
-        }
-}
+
 /* keeping everything centered */
 main {
     display: flex;
