@@ -208,8 +208,7 @@ h3 {
 }
 
 .img:hover {
-    padding
-    background-color: var(--lime-green) ;
+    background-color: var(--lime-green);
     border-radius: 20%;
 }
 
