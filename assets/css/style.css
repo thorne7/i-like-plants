@@ -207,10 +207,31 @@ h3 {
     
 }
 
-.img:hover {
-    background-color: var(--lime-green);
-    border-radius: 20%;
-}
+.proj1 a {
+    text-decoration: none;
+    color: #18272F;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  .proj1 a::before {
+    content: '';
+    background-color: hsla(196, 61%, 58%, .75);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+  
+  .proj1 a:hover::before {
+    bottom: 0;
+    height: 100%;
+  }
+  
 
 /* media querys for accessible veiwing */
 @media screen and (max-width: 576px) {
