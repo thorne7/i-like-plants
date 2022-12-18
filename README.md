@@ -7,6 +7,8 @@ This portfolio contains all the work I have a acheived & participated in. While 
 ## Installation
 Located within my Github page 
 
+## ![alt text](/assets/images/1671361627249.png)
+
 ## Credits
 
 https://www.canva.com/colors/color-palettes/
@@ -20,3 +22,7 @@ For use of patterns
 
 https://www.transition.style/
 for transitions on page
+
+## License 
+
+N/A
