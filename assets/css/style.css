@@ -78,8 +78,6 @@ body {
             padding-left: 5px ;
         }
 }
-
-
 /* keeping everything centered */
 main {
     display: flex;
@@ -209,7 +207,8 @@ h3 {
     
 }
 
-a:hover {
+.img:hover {
+    padding
     background-color: var(--lime-green) ;
     border-radius: 20%;
 }
